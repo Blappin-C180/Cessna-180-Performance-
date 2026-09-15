@@ -1,8 +1,10 @@
-const CACHE = 'c180-perf-v8';
+const CACHE = 'c180-perf-v9';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
+  './apple-touch-icon.png',
+  './favicon.png',
   './photoicon-192.png',
   './photoicon-512.png'
 ];
