@@ -1,4 +1,4 @@
-const CACHE = 'c180-perf-v5';
+const CACHE = 'c180-perf-v6';
 const ASSETS = [
   './',
   './index.html',

@@ -147,6 +147,41 @@ select{font-size:15px}
   .footerwarn{font-size:7px;line-height:1.05;padding-top:2px}
 }
 
+
+/* iPhone-optimised top tabs */
+.tabs{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:3px !important;
+  width:100% !important;
+}
+.tab{
+  min-width:0 !important;
+  width:100% !important;
+  padding:6px 1px !important;
+  font-size:10px !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:clip !important;
+  letter-spacing:-0.15px !important;
+}
+@media (max-width:430px){
+  .app{padding-left:6px !important;padding-right:6px !important}
+  .tabs{gap:2px !important}
+  .tab{
+    padding:6px 0 !important;
+    font-size:9.5px !important;
+    border-radius:8px !important;
+  }
+}
+@media (max-width:375px){
+  .tab{
+    font-size:9px !important;
+    letter-spacing:-0.25px !important;
+  }
+}
+
 </style></head><body><main class="app">
 <header><div><h1>Cessna 180H Performance</h1><div class="sub">1966 POH quick calculator • offline capable</div></div><button class="unit" id="unitToggle">Metric</button></header>
 <nav class="tabs"><button class="tab active" data-tab="takeoff">Take-off</button><button class="tab" data-tab="climb">Climb</button><button class="tab" data-tab="cruise">Cruise</button><button class="tab" data-tab="landing">Landing</button></nav>
