@@ -1,10 +1,10 @@
-const CACHE = 'c180-perf-v6';
+const CACHE = 'c180-perf-v8';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './icon-192.png',
-  './icon-512.png'
+  './photoicon-192.png',
+  './photoicon-512.png'
 ];
 
 self.addEventListener('install', event => {
